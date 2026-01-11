@@ -2,7 +2,6 @@
 
 ## In Progress
 
-- [ ] Verify all Font Awesome icons render correctly (fa-thin weight)
 - [ ] Test dark mode toggle persistence across sessions
 
 ## Planned
@@ -10,9 +9,9 @@
 ### Features
 
 - [ ] Add search functionality to specification page
-- [ ] Add "copy to clipboard" buttons for code blocks
 - [ ] Create component playground with live editing
 - [ ] Add responsive preview breakpoints
+- [ ] Add more icons to reference page (brands, additional categories)
 
 ### Documentation
 
@@ -22,7 +21,6 @@
 
 ### Deployment
 
-- [ ] Configure Vercel deployment
 - [ ] Set up IPFS deployment option
 - [ ] Add GitHub Pages build workflow
 
@@ -40,3 +38,10 @@
 - [x] Add skills to docs/skills/
 - [x] Create README.md with project overview
 - [x] Update CHANGELOG.md with v3.0 release
+- [x] Configure Vercel deployment
+- [x] Verify all Font Awesome icons render correctly (fa-thin weight)
+- [x] Add Icons section to main page with style examples
+- [x] Create /icons page with categorized icon grid (180+ icons)
+- [x] Add copy-to-clipboard functionality for icon names
+- [x] Add search functionality to icons page
+- [x] Add style selector to preview icons in different weights

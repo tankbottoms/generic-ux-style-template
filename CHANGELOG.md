@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v3.1] - 2026-01-11
+
+### Added
+
+- **Icons Section on Main Page**: New accordion section demonstrating Font Awesome styles
+  - Comparison table of all 5 styles (thin, light, regular, solid, duotone)
+  - Usage examples with code snippets
+  - Grid of 12 commonly used icons
+  - Link to full icon reference page
+
+- **Icon Reference Page** (`/icons`): Comprehensive icon browser
+  - 10 categories: Interface, Navigation, Status & Alerts, Communication, Data & Files, Users & People, Shapes & Symbols, Business & Finance, Technology, Media & Content
+  - 180+ commonly used icons with descriptions
+  - Style selector to preview icons in any of 5 Font Awesome styles
+  - Search functionality to filter icons by name or description
+  - Copy-to-clipboard for icon class names (copies full class e.g., `fat fa-house`)
+  - Visual feedback on successful copy
+
+### Changed
+
+- Updated project structure to include `/icons` route
+- Added `expandedSections.icons` to main page accordion state
+
 ## [v3.0] - 2026-01-10
 
 ### Added

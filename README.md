@@ -28,6 +28,10 @@ ux-spec/
     routes/
       +page.svelte      # Main UX specification page
       +layout.svelte    # App layout with header/footer
+      icons/
+        +page.svelte    # Icon reference with copy-to-clipboard
+    lib/
+      stores.svelte.ts  # Icon style state management
     app.css             # Design system CSS variables
     app.html            # HTML template with Font Awesome
   docs/
@@ -35,7 +39,8 @@ ux-spec/
     skills/
       terminal-ui-design.md         # Terminal UI design skill
       default-website-style-guide.md # Website style guide skill
-  static/               # Static assets
+  static/
+    fontawesome/        # Font Awesome Pro 6.1.1 (local)
 ```
 
 ## Design System
@@ -77,6 +82,13 @@ ux-spec/
 --color-accent: #2d5016;
 ```
 
+## Pages
+
+| Route | Description |
+|-------|-------------|
+| `/` | Main UX specification with live examples |
+| `/icons` | Icon reference with 180+ icons by category |
+
 ## Documentation
 
 See [docs/UX-SPECIFICATION.md](docs/UX-SPECIFICATION.md) for the complete design specification including:
@@ -86,7 +98,16 @@ See [docs/UX-SPECIFICATION.md](docs/UX-SPECIFICATION.md) for the complete design
 - Component patterns (cards, tables, alerts, forms)
 - Layout templates for 6 page types
 - Responsive breakpoints
-- Icon reference (Font Awesome thin)
+
+### Icon Reference
+
+The `/icons` page provides:
+
+- 10 categories (Interface, Navigation, Status, Communication, Data, Users, Shapes, Business, Technology, Media)
+- 180+ commonly used icons
+- Style selector (thin, light, regular, solid, duotone)
+- Search functionality
+- Copy-to-clipboard for icon class names
 
 ## Development
 

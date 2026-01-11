@@ -11,6 +11,7 @@
 		philosophy: true,
 		colors: true,
 		typography: true,
+		icons: true,
 		badges: true,
 		components: true,
 		layout: true
@@ -249,6 +250,171 @@
 				<span class="badge badge-blue">Badge Text</span>
 				<span class="text-muted" style="margin-left: 1rem;">font-size: 0.65-0.7rem | font-weight: 500</span>
 			</div>
+		</div>
+	</div>
+	</div>
+	{/if}
+</section>
+
+<!-- Icons -->
+<section class="accordion-section">
+	<button class="accordion-header" onclick={() => toggleSection('icons')}>
+		<h2><i class="{icon()} fa-icons"></i> Icons</h2>
+		<i class="{icon()} {expandedSections.icons ? 'fa-chevron-up' : 'fa-chevron-down'} accordion-toggle"></i>
+	</button>
+	{#if expandedSections.icons}
+	<div class="accordion-content">
+
+	<div class="section-box">
+		<h3>Font Awesome Pro 6</h3>
+		<p class="text-muted" style="margin-bottom: 1rem;">This project includes Font Awesome Pro with multiple icon styles. Use thin (<code>fat</code>) as the primary style for a lightweight aesthetic.</p>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Style</th>
+					<th>Class Prefix</th>
+					<th>Example</th>
+					<th>Usage</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><strong>Thin</strong></td>
+					<td><code>fat</code> or <code>fa-thin</code></td>
+					<td>
+						<i class="fat fa-house" style="font-size: 1.25rem;"></i>
+						<i class="fat fa-user" style="font-size: 1.25rem; margin-left: 0.5rem;"></i>
+						<i class="fat fa-gear" style="font-size: 1.25rem; margin-left: 0.5rem;"></i>
+					</td>
+					<td class="text-muted">Primary style - minimal weight</td>
+				</tr>
+				<tr>
+					<td><strong>Light</strong></td>
+					<td><code>fal</code> or <code>fa-light</code></td>
+					<td>
+						<i class="fal fa-house" style="font-size: 1.25rem;"></i>
+						<i class="fal fa-user" style="font-size: 1.25rem; margin-left: 0.5rem;"></i>
+						<i class="fal fa-gear" style="font-size: 1.25rem; margin-left: 0.5rem;"></i>
+					</td>
+					<td class="text-muted">Slightly heavier than thin</td>
+				</tr>
+				<tr>
+					<td><strong>Regular</strong></td>
+					<td><code>far</code> or <code>fa-regular</code></td>
+					<td>
+						<i class="far fa-house" style="font-size: 1.25rem;"></i>
+						<i class="far fa-user" style="font-size: 1.25rem; margin-left: 0.5rem;"></i>
+						<i class="far fa-gear" style="font-size: 1.25rem; margin-left: 0.5rem;"></i>
+					</td>
+					<td class="text-muted">Medium weight outline</td>
+				</tr>
+				<tr>
+					<td><strong>Solid</strong></td>
+					<td><code>fas</code> or <code>fa-solid</code></td>
+					<td>
+						<i class="fas fa-house" style="font-size: 1.25rem;"></i>
+						<i class="fas fa-user" style="font-size: 1.25rem; margin-left: 0.5rem;"></i>
+						<i class="fas fa-gear" style="font-size: 1.25rem; margin-left: 0.5rem;"></i>
+					</td>
+					<td class="text-muted">Filled icons - high emphasis</td>
+				</tr>
+				<tr>
+					<td><strong>Duotone</strong></td>
+					<td><code>fad</code> or <code>fa-duotone</code></td>
+					<td>
+						<i class="fad fa-house" style="font-size: 1.25rem;"></i>
+						<i class="fad fa-user" style="font-size: 1.25rem; margin-left: 0.5rem;"></i>
+						<i class="fad fa-gear" style="font-size: 1.25rem; margin-left: 0.5rem;"></i>
+					</td>
+					<td class="text-muted">Two-tone layered style</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="section-box mt-2">
+		<h3>Usage Examples</h3>
+
+		<div class="icon-examples">
+			<div class="icon-example-row">
+				<span class="text-muted" style="width: 100px;">Section header:</span>
+				<code>&lt;h2&gt;&lt;i class="fat fa-palette"&gt;&lt;/i&gt; Color System&lt;/h2&gt;</code>
+			</div>
+			<div class="icon-example-row">
+				<span class="text-muted" style="width: 100px;">Button icon:</span>
+				<code>&lt;button&gt;&lt;i class="fat fa-download"&gt;&lt;/i&gt; Export&lt;/button&gt;</code>
+			</div>
+			<div class="icon-example-row">
+				<span class="text-muted" style="width: 100px;">Status icon:</span>
+				<code>&lt;i class="fas fa-circle-check" style="color: green;"&gt;&lt;/i&gt;</code>
+			</div>
+		</div>
+
+		<div class="code-block" style="margin-top: 1rem;">
+			<code>&lt;i class="{'{icon()}'} fa-icon-name"&gt;&lt;/i&gt;  // Uses dynamic thin/duotone toggle</code>
+		</div>
+	</div>
+
+	<div class="section-box mt-2">
+		<h3>Common Icons</h3>
+		<p class="text-muted" style="margin-bottom: 1rem;">Frequently used icons in this design system.</p>
+
+		<div class="common-icons-grid">
+			<div class="common-icon">
+				<i class="{icon()} fa-house"></i>
+				<span>fa-house</span>
+			</div>
+			<div class="common-icon">
+				<i class="{icon()} fa-user"></i>
+				<span>fa-user</span>
+			</div>
+			<div class="common-icon">
+				<i class="{icon()} fa-gear"></i>
+				<span>fa-gear</span>
+			</div>
+			<div class="common-icon">
+				<i class="{icon()} fa-palette"></i>
+				<span>fa-palette</span>
+			</div>
+			<div class="common-icon">
+				<i class="{icon()} fa-lightbulb"></i>
+				<span>fa-lightbulb</span>
+			</div>
+			<div class="common-icon">
+				<i class="{icon()} fa-tag"></i>
+				<span>fa-tag</span>
+			</div>
+			<div class="common-icon">
+				<i class="{icon()} fa-cube"></i>
+				<span>fa-cube</span>
+			</div>
+			<div class="common-icon">
+				<i class="{icon()} fa-table-columns"></i>
+				<span>fa-table-columns</span>
+			</div>
+			<div class="common-icon">
+				<i class="{icon()} fa-arrow-left"></i>
+				<span>fa-arrow-left</span>
+			</div>
+			<div class="common-icon">
+				<i class="{icon()} fa-download"></i>
+				<span>fa-download</span>
+			</div>
+			<div class="common-icon">
+				<i class="{icon()} fa-circle-info"></i>
+				<span>fa-circle-info</span>
+			</div>
+			<div class="common-icon">
+				<i class="{icon()} fa-triangle-exclamation"></i>
+				<span>fa-triangle-exclamation</span>
+			</div>
+		</div>
+
+		<div style="margin-top: 1.5rem;">
+			<a href="/icons" class="button button-primary">
+				<i class="{icon()} fa-grid-2"></i> Browse All Icons
+			</a>
 		</div>
 	</div>
 	</div>
@@ -1090,5 +1256,72 @@
 
 	.treemap-cell-example .treemap-company {
 		font-size: 10px;
+	}
+
+	/* Icon Examples */
+	.icon-examples {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.icon-example-row {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		font-size: 0.85rem;
+	}
+
+	.icon-example-row code {
+		flex: 1;
+	}
+
+	/* Common Icons Grid */
+	.common-icons-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+		gap: 0.75rem;
+	}
+
+	.common-icon {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.75rem 0.5rem;
+		border: 1px solid var(--color-border);
+		background: var(--color-bg);
+		transition: border-color 0.15s ease, box-shadow 0.15s ease;
+	}
+
+	.common-icon:hover {
+		border-color: var(--color-border-dark);
+		box-shadow: 1px 1px 0px var(--color-shadow);
+	}
+
+	.common-icon i {
+		font-size: 1.5rem;
+		color: var(--color-text);
+	}
+
+	.common-icon span {
+		font-size: 0.7rem;
+		color: var(--color-text-muted);
+		text-align: center;
+	}
+
+	@media (max-width: 640px) {
+		.icon-example-row {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.icon-example-row span {
+			width: auto !important;
+		}
+
+		.common-icons-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
 	}
 </style>

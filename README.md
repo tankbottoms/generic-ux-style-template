@@ -2,6 +2,8 @@
 
 A comprehensive UX design system with a live SvelteKit 2 reference implementation.
 
+![Screenshot](static/png/screenshot.png)
+
 ## Quick Start
 
 ```bash
